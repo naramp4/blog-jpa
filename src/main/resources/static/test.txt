@@ -1,0 +1,5 @@
+2024-03-13T15:58:39.904+09:00  WARN 17216 --- [blog-jpa] [nio-8081-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 23502, SQLState: 23502
+2024-03-13T15:58:39.904+09:00 ERROR 17216 --- [blog-jpa] [nio-8081-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : NULL not allowed for column "CREATED_AT"; SQL statement:
+insert into article (content,created_at,title,updated_at,id) values (?,?,?,?,default) [23502-224]
+2024-03-13T15:58:39.905+09:00 ERROR 17216 --- [blog-jpa] [nio-8081-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: could not execute statement [NULL not allowed for column "CREATED_AT"; SQL statement:
+insert into article (content,created_at,title,updated_at,id) values (?,?,?,?,default) [23502-224]] [insert into article (content,created_at,title,updated_at,id) values (?,?,?,?,default)]; SQL [insert into article (content,created_at,title,updated_at,id) values (?,?,?,?,default)]; constraint [null]] with root cause
