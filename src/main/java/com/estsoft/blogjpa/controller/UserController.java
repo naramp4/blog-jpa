@@ -18,6 +18,7 @@ public class UserController {
         this.userService = userService;
     }
 
+    //test
     @PostMapping("/user")
     public String signup(AddUserRequest request) {
         userService.save(request);  // 회원 가입(저장)
